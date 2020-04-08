@@ -46,7 +46,7 @@
         var marzo = [];
         var marzo_bolivia = [];
         var marzo_china = [];
-        var marzo_angola = [];
+        var marzo_eslovenia = [];
         var marzo_francia = [];
         var marzo_suiza = [];
 
@@ -61,21 +61,21 @@
                 marzo.push(x);
             }
 
-            italia = casos.Italy;
-            austria = casos.Austria;
+            bolivia = casos.Bolivia;
+            china = casos.China;
             eslovenia = casos.Slovenia;
             francia = casos.France;
             suiza = casos.Switzerland;
 
-            for (let x = 0; x < italia.length; x++) {
-                if (italia[x].date.includes("-3-")) {
-                    marzo_italia.push(italia[x].confirmed);
+            for (let x = 0; x < bolivia.length; x++) {
+                if (bolivia[x].date.includes("-3-")) {
+                    marzo_bolivia.push(bolivia[x].confirmed);
                 }
             }
 
-            for (let x = 0; x < austria.length; x++) {
-                if (austria[x].date.includes("-3-")) {
-                    marzo_austria.push(austria[x].confirmed);
+            for (let x = 0; x < china.length; x++) {
+                if (china[x].date.includes("-3-")) {
+                    marzo_china.push(china[x].confirmed);
                 }
             }
 
@@ -102,13 +102,13 @@
                 data: {
                     labels: marzo,
                     datasets: [{
-                        label: 'Austria',
+                        label: 'China',
                         backgroundColor: 'rgba(152,78,163,.1)',
                         borderColor: 'rgb(152,78,163)',
                         borderWidth: 2,
                         pointRadius: 2,
                         lineTension: 0,
-                        data: marzo_austria
+                        data: marzo_china
                     }, {
                         label: 'Eslovenia',
                         backgroundColor: 'rgba(77,175,74,.1)',
@@ -132,7 +132,7 @@
                         borderWidth: 2,
                         pointRadius: 2,
                         lineTension: 0,
-                        data: marzo_italia
+                        data: marzo_bolivia
                     }, {
                         label: 'Suiza',
                         backgroundColor: 'rgba(255,127,0,.1)',
