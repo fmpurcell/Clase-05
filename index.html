@@ -42,7 +42,7 @@
     <script>
         var url = "https://pomber.github.io/covid19/timeseries.json";
 
-        var casos, china, confirmados, muertos, recuperados;
+        var casos, angola, confirmados, muertos, recuperados;
 
         function preload() {
             casos = loadJSON(url);
@@ -50,11 +50,11 @@
 
         function setup() {
             createCanvas(windowWidth, windowHeight).position(0, 0).style('z-index', -1);
-            china = casos.Chile;
-            console.log(china);
-            confirmados = china[china.length - 1].confirmed;
-            muertos = china[china.length - 1].deaths;
-            recuperados = china[china.length - 1].recovered;
+            angola = casos.angola;
+            console.log(angola);
+            confirmados = angola[angola.length - 1].confirmed;
+            muertos = angola[angola.length - 1].deaths;
+            recuperados = angola[angola.length - 1].recovered;
             console.log(confirmados);
             console.log(muertos);
             console.log(recuperados);
